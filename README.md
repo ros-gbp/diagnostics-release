@@ -1,3 +1,31 @@
+## diagnostics (hydro) - 1.8.8-0
+
+The packages in the `diagnostics` repository were released into the `hydro` distro by running `/usr/bin/bloom-release -r hydro -t hydro diagnostics` on `Fri, 07 Aug 2015 04:06:55 -0000`
+
+These packages were released:
+- `diagnostic_aggregator`
+- `diagnostic_analysis`
+- `diagnostic_common_diagnostics`
+- `diagnostic_updater`
+- `diagnostics`
+- `self_test`
+- `test_diagnostic_aggregator`
+
+Version of package(s) in repository `diagnostics`:
+- upstream repository: https://github.com/ros/diagnostics.git
+- release repository: https://github.com/ros-gbp/diagnostics-release.git
+- rosdistro version: `1.8.7-0`
+- old version: `1.8.7-1`
+- new version: `1.8.8-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.8`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.2`
+- vcstools version: `0.1.36`
+
+
 ## diagnostics (hydro) - 1.8.7-1
 
 The packages in the `diagnostics` repository were released into the `hydro` distro by running `/usr/bin/bloom-release -r hydro -t hydro diagnostics` on `Fri, 07 Aug 2015 04:00:16 -0000`
