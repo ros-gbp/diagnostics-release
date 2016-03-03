@@ -3,16 +3,24 @@ cmake_minimum_required(VERSION 2.8.3)
 project(diagnostic_aggregator)
 
 # Load catkin and all dependencies required for this package
-find_package(catkin REQUIRED diagnostic_msgs pluginlib roscpp rospy rostest xmlrpcpp)
-
-catkin_package(DEPENDS diagnostic_msgs pluginlib roscpp rospy xmlrpcpp
+find_package(catkin REQUIRED diagnostic_msgs pluginlib roscpp rospy rostest xmlrpcpp bondcpp)
+catkin_package(DEPENDS diagnostic_msgs pluginlib roscpp rospy xmlrpcpp bondcpp bondpy
     INCLUDE_DIRS include
     LIBRARIES ${PROJECT_NAME})
 
-find_package(Boost REQUIRED COMPONENTS system regex)
-include_directories(SYSTEM ${Boost_INCLUDE_DIRS})
+set(REQUIRED_diagnostic_msgs_VERSION_Indigo "1.11.9")
+set(REQUIRED_diagnostic_msgs_VERSION_Jade "1.12.4")
+if( ${diagnostic_msgs_VERSION} VERSION_LESS ${REQUIRED_diagnostic_msgs_VERSION_Indigo})
+  message(FATAL_ERROR "diagnostic_msgs version ${REQUIRED_diagnostic_msgs_VERSION_Indigo} or newer is required to build diagnotic_aggregator on ROS Indigo")
+endif()
+if( (${diagnostic_msgs_VERSION} VERSION_EQUAL "1.12.0") OR
+    (${diagnostic_msgs_VERSION} VERSION_GREATER "1.12.0" AND
+     ${diagnostic_msgs_VERSION} VERSION_LESS ${REQUIRED_diagnostic_msgs_VERSION_Jade}))
+  message(FATAL_ERROR "diagnostic_msgs version ${REQUIRED_diagnostic_msgs_VERSION_Jade} or newer is required to build diagnotic_aggregator on ROS Jade")
+endif()
 
-include_directories(include ${catkin_INCLUDE_DIRS} gtest-1.7.0/include)
+find_package(Boost REQUIRED COMPONENTS system)
+include_directories(include ${catkin_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS} gtest-1.7.0/include)
 
 add_library(${PROJECT_NAME}
   src/status_item.cpp
@@ -39,6 +47,7 @@ target_link_libraries(analyzer_loader diagnostic_aggregator)
 
 if(CATKIN_ENABLE_TESTING)
   add_rostest(test/launch/test_agg.launch)
+  add_rostest(test/launch/test_add_agg.launch)
 
   # Test Analyzer loader
   add_rostest(test/launch/test_loader.launch)
@@ -46,6 +55,10 @@ if(CATKIN_ENABLE_TESTING)
   add_rostest(test/launch/test_multiple_match.launch)
 endif()
 
+catkin_install_python(
+        PROGRAMS scripts/add_analyzers
+        DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 install(DIRECTORY include/${PROJECT_NAME}/
         DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
 )
