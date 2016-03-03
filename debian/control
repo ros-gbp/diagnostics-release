@@ -1,0 +1,12 @@
+Source: ros-jade-diagnostic-common-diagnostics
+Section: misc
+Priority: extra
+Maintainer: Austin Hendrix <namniart@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-diagnostic-updater, ros-jade-rospy
+Homepage: http://ros.org/wiki/diagnostic_common_diagnostics
+Standards-Version: 3.9.2
+
+Package: ros-jade-diagnostic-common-diagnostics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, hddtemp, ros-jade-diagnostic-updater, ros-jade-rospy, ros-jade-tf
+Description: diagnostic_common_diagnostics
