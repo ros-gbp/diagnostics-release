@@ -1,0 +1,12 @@
+Source: ros-kinetic-test-diagnostic-aggregator
+Section: misc
+Priority: extra
+Maintainer: Brice Rebsamen <brice.rebsamen@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-diagnostic-aggregator (>= 1.8.9), ros-kinetic-diagnostic-msgs, ros-kinetic-pluginlib, ros-kinetic-roscpp, ros-kinetic-rospy, ros-kinetic-rostest
+Homepage: http://ros.org/wiki/test_diagnostic_aggregator
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-test-diagnostic-aggregator
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-diagnostic-aggregator (>= 1.8.9), ros-kinetic-diagnostic-msgs, ros-kinetic-pluginlib, ros-kinetic-roscpp, ros-kinetic-rospy
+Description: Basic diagnostic_aggregator tests are in the
