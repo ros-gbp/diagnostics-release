@@ -1,0 +1,158 @@
+ros-kinetic-diagnostic-common-diagnostics (1.8.10-0jessie) jessie; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 14 Jun 2016 07:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.8.9-0jessie) jessie; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 02 Mar 2016 08:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.8.8-0jessie) jessie; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 06 Aug 2015 07:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.8.7-0jessie) jessie; urgency=high
+
+  * Remove libsensors node because it isn't portable.
+  * Contributors: trainman419
+
+ -- Austin Hendrix <namniart@gmail.com>  Fri, 09 Jan 2015 08:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.8.6-0jessie) jessie; urgency=high
+
+  * Add voltage sensor support
+  * Add ignore_sensors parameter
+  * Add license agreement
+  * Style cleanup and error handling
+  * Initial commit of libsensors based sensors_monitor
+  * Contributors: Mitchell Wills, trainman419
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 10 Dec 2014 08:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.8.5-0jessie) jessie; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 29 Jul 2014 07:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.8.4-0jessie) jessie; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Fri, 25 Jul 2014 03:51:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.8.3-0jessie) jessie; urgency=high
+
+  * ntp_diagnostic now publishing more frequently to avoid stale
+  * added install rules for the common diagnostics scripts
+  * Contributors: Brice Rebsamen
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 23 Apr 2014 07:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.8.2-0jessie) jessie; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 08 Apr 2014 07:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.8.1-0jessie) jessie; urgency=high
+
+  * Add myself as maintainer
+  * fixed exporting python API to address #10 <https://github.com/ros/diagnostics/issues/10>
+  * Contributors: Austin Hendrix, Brice Rebsamen
+
+ -- Austin Hendrix <namniart@gmail.com>  Mon, 07 Apr 2014 07:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.8.0-0jessie) jessie; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 03 Apr 2013 07:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.7.11-0jessie) jessie; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Fri, 25 Jul 2014 03:24:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.7.10-0jessie) jessie; urgency=high
+
+  * Changed package.xml version number before releasing
+  * added missing license header
+  * added missing license header
+  * Contributors: Aaron Blasdel, Brice Rebsamen
+
+ -- Austin Hendrix <namniart@gmail.com>  Fri, 22 Feb 2013 08:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.7.9-0jessie) jessie; urgency=high
+
+  * add missing dep to catkin
+  * updated setup.py
+  * Contributors: Dirk Thomas
+
+ -- Austin Hendrix <namniart@gmail.com>  Fri, 14 Dec 2012 08:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.7.8-0jessie) jessie; urgency=high
+
+  * fix setup.py requires
+  * Contributors: Dirk Thomas
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 06 Dec 2012 08:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.7.7-0jessie) jessie; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Sat, 10 Nov 2012 08:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.7.6-0jessie) jessie; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 08 Nov 2012 07:32:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.7.5-0jessie) jessie; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 08 Nov 2012 05:53:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.7.4-0jessie) jessie; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 08 Nov 2012 04:18:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.7.3-0jessie) jessie; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Sun, 04 Nov 2012 07:00:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.7.2-0jessie) jessie; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 31 Oct 2012 05:31:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.7.1-0jessie) jessie; urgency=high
+
+  * fix a few things after the first release
+  * Contributors: Vincent Rabaud
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 30 Oct 2012 22:30:00 -0000
+
+ros-kinetic-diagnostic-common-diagnostics (1.7.0-0jessie) jessie; urgency=high
+
+  * catkinize the stack
+  * backport the Python API from 1.7.0
+  * Contributors: Vincent Rabaud
+
+ -- Austin Hendrix <namniart@gmail.com>  Mon, 29 Oct 2012 07:00:00 -0000
+
+
