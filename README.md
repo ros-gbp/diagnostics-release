@@ -1,3 +1,33 @@
+## diagnostics (indigo) - 1.8.10-0
+
+The packages in the `diagnostics` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -t indigo -r indigo diagnostics` on `Wed, 15 Jun 2016 00:29:30 -0000`
+
+These packages were released:
+- `diagnostic_aggregator`
+- `diagnostic_analysis`
+- `diagnostic_common_diagnostics`
+- `diagnostic_updater`
+- `diagnostics`
+- `self_test`
+- `test_diagnostic_aggregator`
+
+Version of package(s) in repository `diagnostics`:
+
+- upstream repository: https://github.com/ros/diagnostics.git
+- release repository: https://github.com/ros-gbp/diagnostics-release.git
+- rosdistro version: `1.8.9-0`
+- old version: `1.8.9-0`
+- new version: `1.8.10-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## diagnostics (kinetic) - 1.8.9-0
 
 The packages in the `diagnostics` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -t kinetic -r kinetic --new-track diagnostics` on `Fri, 01 Apr 2016 00:09:55 -0000`
