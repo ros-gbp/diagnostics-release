@@ -1,0 +1,158 @@
+ros-jade-diagnostic-analysis (1.8.10-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 14 Jun 2016 07:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.8.9-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 02 Mar 2016 08:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.8.8-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 06 Aug 2015 07:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.8.7-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Fri, 09 Jan 2015 08:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.8.6-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 10 Dec 2014 08:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.8.5-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 29 Jul 2014 07:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.8.4-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Fri, 25 Jul 2014 03:51:00 -0000
+
+ros-jade-diagnostic-analysis (1.8.3-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 23 Apr 2014 07:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.8.2-0trusty) trusty; urgency=high
+
+  * Most tests pass
+  * Contributors: Austin Hendrix
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 08 Apr 2014 07:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.8.1-0trusty) trusty; urgency=high
+
+  * Add myself as maintainer
+  * check for CATKIN_ENABLE_TESTING
+  * Contributors: Austin Hendrix, Lukas Bulwahn
+
+ -- Austin Hendrix <namniart@gmail.com>  Mon, 07 Apr 2014 07:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.8.0-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 03 Apr 2013 07:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.7.11-0trusty) trusty; urgency=high
+
+  * Fix python setup in diagnostic_analysis
+  * Contributors: trainman419
+
+ -- Austin Hendrix <namniart@gmail.com>  Fri, 25 Jul 2014 03:24:00 -0000
+
+ros-jade-diagnostic-analysis (1.7.10-0trusty) trusty; urgency=high
+
+  * removed rostest from test_depend in diagnostic_analysis
+  * Changed package.xml version number before releasing
+  * Removed duplicated test dependancies
+    test_depend tags should not duplicate run/build depends tags.
+  * Contributors: Aaron Blasdel, Brice Rebsamen
+
+ -- Austin Hendrix <namniart@gmail.com>  Fri, 22 Feb 2013 08:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.7.9-0trusty) trusty; urgency=high
+
+  * add missing dep to catkin
+  * Contributors: Dirk Thomas
+
+ -- Austin Hendrix <namniart@gmail.com>  Fri, 14 Dec 2012 08:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.7.8-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 06 Dec 2012 08:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.7.7-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Sat, 10 Nov 2012 08:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.7.6-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 08 Nov 2012 07:32:00 -0000
+
+ros-jade-diagnostic-analysis (1.7.5-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 08 Nov 2012 05:53:00 -0000
+
+ros-jade-diagnostic-analysis (1.7.4-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 08 Nov 2012 04:18:00 -0000
+
+ros-jade-diagnostic-analysis (1.7.3-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Sun, 04 Nov 2012 07:00:00 -0000
+
+ros-jade-diagnostic-analysis (1.7.2-0trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 31 Oct 2012 05:31:00 -0000
+
+ros-jade-diagnostic-analysis (1.7.1-0trusty) trusty; urgency=high
+
+  * fix a few things after the first release
+  * Contributors: Vincent Rabaud
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 30 Oct 2012 22:30:00 -0000
+
+ros-jade-diagnostic-analysis (1.7.0-0trusty) trusty; urgency=high
+
+  * catkinize the stack
+  * #5364 <https://github.com/ros/diagnostics/issues/5364> #5396 <https://github.com/ros/diagnostics/issues/5396> remove useless rosrecord import
+  * diagnostic_analysis updated to use rosbag API. #4163 <https://github.com/ros/diagnostics/issues/4163>
+  * Added Ubuntu platform tags to manifest
+  * diagnostic_aggregator/diagnostic_analysis doc reviewed
+  * small bug fixes
+  * Added hardware_id field to CSV output for export_csv.py
+  * Removing deprecated line in CMakesList.txt for diagnostics 0.3.0
+  * Renamed diagnostics_analysis to diagnostic_analysis, #2700 <https://github.com/ros/diagnostics/issues/2700>
+  * Contributors: Vincent Rabaud, gerkey, kwc, watts
+
+ -- Austin Hendrix <namniart@gmail.com>  Mon, 29 Oct 2012 07:00:00 -0000
+
+
