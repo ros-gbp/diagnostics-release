@@ -1,3 +1,34 @@
+## diagnostics (kinetic) - 1.9.0-0
+
+The packages in the `diagnostics` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release diagnostics --track kinetic --rosdistro kinetic` on `Tue, 25 Apr 2017 07:24:38 -0000`
+
+These packages were released:
+- `diagnostic_aggregator`
+- `diagnostic_analysis`
+- `diagnostic_common_diagnostics`
+- `diagnostic_updater`
+- `diagnostics`
+- `rosdiagnostic`
+- `self_test`
+- `test_diagnostic_aggregator`
+
+Version of package(s) in repository `diagnostics`:
+
+- upstream repository: https://github.com/ros/diagnostics.git
+- release repository: https://github.com/ros-gbp/diagnostics-release.git
+- rosdistro version: `1.8.10-0`
+- old version: `1.8.10-0`
+- new version: `1.9.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.23`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.5.0`
+- vcstools version: `0.1.39`
+
+
 ## diagnostics (jade) - 1.9.0-0
 
 The packages in the `diagnostics` repository were released into the `jade` distro by running `/usr/bin/bloom-release diagnostics --track jade --rosdistro jade` on `Tue, 25 Apr 2017 07:18:47 -0000`
