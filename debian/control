@@ -1,0 +1,12 @@
+Source: ros-lunar-test-diagnostic-aggregator
+Section: misc
+Priority: extra
+Maintainer: Brice Rebsamen <brice.rebsamen@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-diagnostic-aggregator (>= 1.8.9), ros-lunar-diagnostic-msgs, ros-lunar-pluginlib, ros-lunar-roscpp, ros-lunar-rospy, ros-lunar-rostest
+Homepage: http://ros.org/wiki/test_diagnostic_aggregator
+Standards-Version: 3.9.2
+
+Package: ros-lunar-test-diagnostic-aggregator
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-diagnostic-aggregator (>= 1.8.9), ros-lunar-diagnostic-msgs, ros-lunar-pluginlib, ros-lunar-roscpp, ros-lunar-rospy
+Description: Basic diagnostic_aggregator tests are in the
