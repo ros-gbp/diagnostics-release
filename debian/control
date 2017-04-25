@@ -1,0 +1,12 @@
+Source: ros-kinetic-rosdiagnostic
+Section: misc
+Priority: extra
+Maintainer: Guillaume Autran <gautran@clearpath.ai>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-rosdiagnostic
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-diagnostic-msgs, ros-kinetic-rospy
+Description: Command to print aggregated diagnostic contents to the command line
