@@ -1,6 +1,6 @@
 <package>
   <name>diagnostic_common_diagnostics</name>
-  <version>1.9.0</version>
+  <version>1.9.1</version>
   <description>diagnostic_common_diagnostics</description>
   <author email="brice.rebsamen@gmail.com">Brice Rebsamen</author>
   <maintainer email="namniart@gmail.com">Austin Hendrix</maintainer>
@@ -20,6 +20,7 @@
   <run_depend>hddtemp</run_depend>
   <run_depend>rospy</run_depend>
   <run_depend>tf</run_depend>
+  <run_depend>python-psutil</run_depend>
 
   <!-- <test_depend>diagnostic_updater</test_depend> -->
   <!-- <test_depend>rospy</test_depend> -->
