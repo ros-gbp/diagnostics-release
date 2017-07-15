@@ -1,7 +1,8 @@
 #!/usr/bin/env python
+#
 # Software License Agreement (BSD License)
 #
-# Copyright (c) 2009, Willow Garage, Inc.
+# Copyright (c) 2017, TNO IVS, Helmond, Netherlands
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -14,7 +15,7 @@
 #    copyright notice, this list of conditions and the following
 #    disclaimer in the documentation and/or other materials provided
 #    with the distribution.
-#  * Neither the name of the Willow Garage nor the names of its
+#  * Neither the name of the TNO IVS nor the names of its
 #    contributors may be used to endorse or promote products derived
 #    from this software without specific prior written permission.
 #
@@ -30,40 +31,47 @@
 # LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
 # ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
-#
 
-##\author Kevin Watts
-
-##\brief Publishes messages for aggregator testing of expected items.
-
-PKG = 'diagnostic_aggregator'
-
-import roslib; roslib.load_manifest(PKG)
+# \author Rein Appeldoorn
 
 
+import unittest
 import rospy
-from time import sleep
+import rostest
+from diagnostic_msgs.msg import DiagnosticArray
 
-from diagnostic_msgs.msg import DiagnosticArray, DiagnosticStatus
 
+class TestCPUMonitor(unittest.TestCase):
+
+    def diagnostics_callback(self, msg):
+        self._msg = msg
+
+    def test_cpu_monitor_diagnostics(self):
+        rospy.init_node('test_cpu_monitor')
+        self._expected_level = None
+        if rospy.has_param('~expected_level'):
+            self._expected_level = rospy.get_param('~expected_level')
+
+        self._subscriber = rospy.Subscriber('diagnostics', DiagnosticArray, self.diagnostics_callback)
+        self._msg = None
+
+        while not self._msg:
+            rospy.sleep(.1)
+        self._subscriber.unregister()
+
+        self.assertEqual(len(self._msg.status), 1)
+        status = self._msg.status[0]
+
+        for v in status.values:
+            percentage = float(v.value)
+            self.assertGreaterEqual(percentage, 0)
+            self.assertLessEqual(percentage, 100)
+
+        if self._expected_level:
+            self.assertEqual(self._expected_level, status.level)
+
+
+PKG = 'diagnostics_common_diagnostics'
+NAME = 'test_cpu_monitor'
 if __name__ == '__main__':
-    rospy.init_node('diag_pub')
-    pub = rospy.Publisher('/diagnostics', DiagnosticArray, queue_size=10)
-    
-    start_time = rospy.get_time()
-    
-    while not rospy.is_shutdown():
-        array = DiagnosticArray()
-        array.header.stamp = rospy.get_rostime()
-        array.status = [
-            # GenericAnalyzer my_path
-            DiagnosticStatus(0, 'multi', 'OK', '', []),
-            DiagnosticStatus(1, 'Something', 'OK', '', []),
-            DiagnosticStatus(2, 'Something Else', 'OK', '', []),
-            
-            # OtherAnalyzer for Other
-            DiagnosticStatus(2, 'other2', 'OK', '', []),
-            DiagnosticStatus(0, 'other3', 'OK', '', [])]
-        
-        pub.publish(array)
-        sleep(1)
+    rostest.unitrun(PKG, NAME, TestCPUMonitor)
