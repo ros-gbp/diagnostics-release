@@ -1,0 +1,12 @@
+Source: ros-kinetic-diagnostic-common-diagnostics
+Section: misc
+Priority: extra
+Maintainer: Austin Hendrix <namniart@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-diagnostic-updater, ros-kinetic-rospy
+Homepage: http://ros.org/wiki/diagnostic_common_diagnostics
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-diagnostic-common-diagnostics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, hddtemp, python-psutil, ros-kinetic-diagnostic-updater, ros-kinetic-rospy, ros-kinetic-tf
+Description: diagnostic_common_diagnostics
