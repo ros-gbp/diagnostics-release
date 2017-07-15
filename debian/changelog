@@ -1,0 +1,159 @@
+ros-indigo-diagnostics (1.9.1-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Sat, 15 Jul 2017 07:00:00 -0000
+
+ros-indigo-diagnostics (1.9.0-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Tue, 25 Apr 2017 07:00:00 -0000
+
+ros-indigo-diagnostics (1.8.10-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Tue, 14 Jun 2016 07:00:00 -0000
+
+ros-indigo-diagnostics (1.8.9-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Wed, 02 Mar 2016 08:00:00 -0000
+
+ros-indigo-diagnostics (1.8.8-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Thu, 06 Aug 2015 07:00:00 -0000
+
+ros-indigo-diagnostics (1.8.7-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Fri, 09 Jan 2015 08:00:00 -0000
+
+ros-indigo-diagnostics (1.8.6-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Wed, 10 Dec 2014 08:00:00 -0000
+
+ros-indigo-diagnostics (1.8.5-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Tue, 29 Jul 2014 07:00:00 -0000
+
+ros-indigo-diagnostics (1.8.4-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Fri, 25 Jul 2014 03:51:00 -0000
+
+ros-indigo-diagnostics (1.8.3-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Wed, 23 Apr 2014 07:00:00 -0000
+
+ros-indigo-diagnostics (1.8.2-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Tue, 08 Apr 2014 07:00:00 -0000
+
+ros-indigo-diagnostics (1.8.1-0trusty) trusty; urgency=high
+
+  * Add myself as maintainer
+  * Contributors: Austin Hendrix
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Mon, 07 Apr 2014 07:00:00 -0000
+
+ros-indigo-diagnostics (1.8.0-0trusty) trusty; urgency=high
+
+  * Updating metapackages to reflect REP-0127
+  * Contributors: William Woodall
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Wed, 03 Apr 2013 07:00:00 -0000
+
+ros-indigo-diagnostics (1.7.11-0trusty) trusty; urgency=high
+
+  * Restore diagnostics meta package description
+    For the wiki etc.
+  * Updating metapackages to reflect REP-0127
+  * Contributors: Felix Kolbe, William Woodall
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Fri, 25 Jul 2014 03:24:00 -0000
+
+ros-indigo-diagnostics (1.7.10-0trusty) trusty; urgency=high
+
+  * Changed package.xml version number before releasing
+  * Contributors: Brice Rebsamen
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Fri, 22 Feb 2013 08:00:00 -0000
+
+ros-indigo-diagnostics (1.7.9-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Fri, 14 Dec 2012 08:00:00 -0000
+
+ros-indigo-diagnostics (1.7.8-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Thu, 06 Dec 2012 08:00:00 -0000
+
+ros-indigo-diagnostics (1.7.7-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Sat, 10 Nov 2012 08:00:00 -0000
+
+ros-indigo-diagnostics (1.7.6-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Thu, 08 Nov 2012 07:32:00 -0000
+
+ros-indigo-diagnostics (1.7.5-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Thu, 08 Nov 2012 05:53:00 -0000
+
+ros-indigo-diagnostics (1.7.4-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Thu, 08 Nov 2012 04:18:00 -0000
+
+ros-indigo-diagnostics (1.7.3-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Sun, 04 Nov 2012 07:00:00 -0000
+
+ros-indigo-diagnostics (1.7.2-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Wed, 31 Oct 2012 05:31:00 -0000
+
+ros-indigo-diagnostics (1.7.1-0trusty) trusty; urgency=high
+
+  * fix a few things after the first release
+  * add the meta-package
+  * Contributors: Vincent Rabaud
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Tue, 30 Oct 2012 22:30:00 -0000
+
+ros-indigo-diagnostics (1.7.0-0trusty) trusty; urgency=high
+
+
+
+ -- Brice Rebsamen <brice.rebsamen@gmail.com>  Mon, 29 Oct 2012 07:00:00 -0000
+
+
