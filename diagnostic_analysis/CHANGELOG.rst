@@ -2,6 +2,9 @@
 Changelog for package diagnostic_analysis
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.9.1 (2017-07-15)
+------------------
+
 1.9.0 (2017-04-25)
 ------------------
 * Install diagnostic_analysis nodes
