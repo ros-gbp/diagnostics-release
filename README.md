@@ -1,3 +1,34 @@
+## diagnostics (lunar) - 1.9.1-0
+
+The packages in the `diagnostics` repository were released into the `lunar` distro by running `/usr/bin/bloom-release --rosdistro lunar --track lunar diagnostics` on `Sun, 16 Jul 2017 00:01:46 -0000`
+
+These packages were released:
+- `diagnostic_aggregator`
+- `diagnostic_analysis`
+- `diagnostic_common_diagnostics`
+- `diagnostic_updater`
+- `diagnostics`
+- `rosdiagnostic`
+- `self_test`
+- `test_diagnostic_aggregator`
+
+Version of package(s) in repository `diagnostics`:
+
+- upstream repository: https://github.com/ros/diagnostics.git
+- release repository: https://github.com/ros-gbp/diagnostics-release.git
+- rosdistro version: `1.9.0-0`
+- old version: `1.9.0-0`
+- new version: `1.9.1-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.5`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## diagnostics (kinetic) - 1.9.1-0
 
 The packages in the `diagnostics` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --rosdistro kinetic --track kinetic diagnostics` on `Sat, 15 Jul 2017 23:54:03 -0000`
