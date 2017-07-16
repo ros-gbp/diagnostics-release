@@ -1,0 +1,23 @@
+ros-jade-rosdiagnostic (1.9.2-0trusty) trusty; urgency=high
+
+
+
+ -- Guillaume Autran <gautran@clearpath.ai>  Sat, 15 Jul 2017 07:00:00 -0000
+
+ros-jade-rosdiagnostic (1.9.1-0trusty) trusty; urgency=high
+
+
+
+ -- Guillaume Autran <gautran@clearpath.ai>  Sat, 15 Jul 2017 07:00:00 -0000
+
+ros-jade-rosdiagnostic (1.9.0-0trusty) trusty; urgency=high
+
+  * Initial release
+  * Created a command to print rosdiagnostics to the console.
+    Works very much like rostopic echo but instead automatically connects to the aggregated diagnostics and output in a friendly format the content of the diagnostic report.
+    Issue: https://github.com/ros/diagnostics/issues/57
+  * Contributors: Guillaume Autran
+
+ -- Guillaume Autran <gautran@clearpath.ai>  Tue, 25 Apr 2017 07:00:00 -0000
+
+
