@@ -1,8 +1,7 @@
-#!/usr/bin/python
-#
+#!/usr/bin/env python
 # Software License Agreement (BSD License)
 #
-# Copyright (c) 2008, Willow Garage, Inc.
+# Copyright (c) 2019, Magazino GmbH.
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -15,7 +14,7 @@
 #    copyright notice, this list of conditions and the following
 #    disclaimer in the documentation and/or other materials provided
 #    with the distribution.
-#  * Neither the name of the Willow Garage nor the names of its
+#  * Neither the name of Magazino GmbH nor the names of its
 #    contributors may be used to endorse or promote products derived
 #    from this software without specific prior written permission.
 #
@@ -31,47 +30,31 @@
 # LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
 # ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
+#
 
-##\author Eric Berger, Kevin Watts
+# \author Guglielmo Gemignani
 
-##\brief Converts diagnostics log files into CSV's for analysis
+# \brief Publishes messages for aggregator testing of discard stale flag
 
-PKG = 'diagnostic_analysis'
-import roslib; roslib.load_manifest(PKG)
-import diagnostic_msgs.msg
-import time, sys, os
-import operator, tempfile, subprocess
+from time import sleep
 
-from optparse import OptionParser
+from diagnostic_msgs.msg import DiagnosticArray, DiagnosticStatus
+import rospy
 
-from diagnostic_analysis.exporter import LogExporter
 
 if __name__ == '__main__':
-    # Allow user to set output directory
-    parser = OptionParser()
-    parser.add_option("-d", "--directory", dest="directory",
-                      help="Write output to DIR/output. Default: %s" % PKG, metavar="DIR",
-                      default=roslib.packages.get_pkg_dir(PKG), action="store")
-    options, args = parser.parse_args()
+    rospy.init_node('diag_pub')
+    pub = rospy.Publisher('/diagnostics', DiagnosticArray, queue_size=10)
 
-    exporters = []
+    start_time = rospy.get_time()
 
-    print('Output directory: %s/output' % options.directory)
+    while not rospy.is_shutdown():
+        array = DiagnosticArray()
+        array.header.stamp = rospy.get_rostime()
 
-    try:
-        for i, f in enumerate(args):
-            filepath = 'output/%s_csv' % os.path.basename(f)[0:os.path.basename(f).find('.')]
-            
-            output_dir = os.path.join(options.directory,  filepath)
-            print("Processing file %s. File %d of %d." % (os.path.basename(f), i + 1, len(args)))
+        # after 2 seconds we will publish only an empty diagnostics
+        if rospy.get_time() - start_time < 3:
+            array.status = [DiagnosticStatus(1, 'nonexistent2', 'WARN', '', [])]
 
-            exp = LogExporter(output_dir, f)
-            exp.process_log()
-            exp.finish_logfile()
-            exporters.append(exp)
-
-        print('Finished processing files.')
-    except:
-        import traceback
-        print("Caught exception processing log file")
-        traceback.print_exc()
+        pub.publish(array)
+        sleep(1.0)
