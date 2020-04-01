@@ -1,3 +1,34 @@
+## diagnostics (noetic) - 1.9.4-1
+
+The packages in the `diagnostics` repository were released into the `noetic` distro by running `/Users/karsten/.pyenv/versions/3.7.4/bin/bloom-release --rosdistro noetic --track noetic diagnostics --edit` on `Wed, 01 Apr 2020 18:39:06 -0000`
+
+These packages were released:
+- `diagnostic_aggregator`
+- `diagnostic_analysis`
+- `diagnostic_common_diagnostics`
+- `diagnostic_updater`
+- `diagnostics`
+- `rosdiagnostic`
+- `self_test`
+- `test_diagnostic_aggregator`
+
+Version of package(s) in repository `diagnostics`:
+
+- upstream repository: https://github.com/ros/diagnostics.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.9.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.3`
+- catkin_pkg version: `0.4.16`
+- rosdep version: `0.17.1`
+- rosdistro version: `0.8.0`
+- vcstools version: `0.1.42`
+
+
 ## diagnostics (melodic) - 1.9.3-0
 
 The packages in the `diagnostics` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --non-interactive --rosdistro melodic --track melodic diagnostics` on `Wed, 02 May 2018 17:59:41 -0000`
