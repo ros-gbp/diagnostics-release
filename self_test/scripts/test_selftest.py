@@ -78,12 +78,12 @@ class TestSelfTest(unittest.TestCase):
 
         try:
             rospy.wait_for_service(SRV_NAME, 15)
-        except Exception as e:
+        except Exception, e:
             self.assert_(False, "Service %s did not respond. Unable to test self_test" % SRV_NAME)
 
         try:
             res = proxy()
-        except Exception as e:
+        except Exception, e:
             import traceback
             self.assert_(False, "Error calling self_test service. Exception: %s" % traceback.format_exc())
 
