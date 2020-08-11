@@ -2,6 +2,13 @@
 Changelog for package diagnostic_aggregator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.9.5 (2020-08-10)
+------------------
+* Update CMakeLists.txt to search for local gtest first
+* Fix copyright and remove unused imports
+* Improvement by using opertors instead of aliases (Closes `#95 <https://github.com/ros/diagnostics/issues/95>`_
+* Contributors: Austin, Guglielmo Gemignani, James Xu, Martin Pecka, Sean Yen
+
 1.9.3 (2018-05-02)
 ------------------
 * Merge pull request `#79 <https://github.com/ros/diagnostics/issues/79>`_ from nlamprian/indigo-devel
