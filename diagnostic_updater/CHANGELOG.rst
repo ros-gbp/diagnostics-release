@@ -2,8 +2,15 @@
 Changelog for package diagnostic_updater
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.9.5 (2020-08-10)
+1.10.0 (2020-08-11)
+-------------------
+* Make Guglielmo Gemignani ROS1 maintainer (`#155 <https://github.com/ros/diagnostics/issues/155>`_)
+* Test build fix on Windows build. (`#8 <https://github.com/ros/diagnostics/issues/8>`_) (`#138 <https://github.com/ros/diagnostics/issues/138>`_)
+* Contributors: Guglielmo Gemignani, Sean Yen
+
+1.9.4 (2020-04-01)
 ------------------
+* noetic release (`#136 <https://github.com/ros/diagnostics/issues/136>`_)
 * Merge pull request `#105 <https://github.com/ros/diagnostics/issues/105>`_ from mikepurvis/py3-httplib
   Fix httplib import for Python 3.
 * Fix httplib import for Python 3.
@@ -21,7 +28,7 @@ Changelog for package diagnostic_updater
 * Merge pull request `#84 <https://github.com/ros/diagnostics/issues/84>`_ from nbussas/frequency_status_name
   Make FrequencyStatus' name configurable
 * Make FrequencyStatus' name configurable
-* Contributors: Austin, Ian Colwell, James Xu, Mike Purvis, Nils Bussas, Sean Yen
+* Contributors: Alejandro Hernández Cordero, Austin, Ian Colwell, James Xu, Mike Purvis, Nils Bussas, Sean Yen
 
 1.9.3 (2018-05-02)
 ------------------

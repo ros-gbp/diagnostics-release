@@ -1,5 +1,5 @@
 # http://ros.org/doc/groovy/api/catkin/html/user_guide/supposed.html
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(diagnostic_aggregator)
 
 # Load catkin and all dependencies required for this package
@@ -57,6 +57,8 @@ if(CATKIN_ENABLE_TESTING)
   add_rostest(test/launch/test_loader.launch)
   add_rostest(test/launch/test_expected_stale.launch)
   add_rostest(test/launch/test_multiple_match.launch)
+
+  add_rostest(test/launch/test_discard_stale_not_published.launch)
 endif()
 
 catkin_install_python(
