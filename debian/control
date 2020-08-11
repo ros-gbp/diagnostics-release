@@ -1,0 +1,13 @@
+Source: ros-melodic-diagnostic-analysis
+Section: misc
+Priority: optional
+Maintainer: Austin Hendrix <namniart@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin (>= 0.5.68), ros-melodic-diagnostic-msgs, ros-melodic-rosbag, ros-melodic-roslib, ros-melodic-rostest
+Homepage: http://www.ros.org/wiki/diagnostics_analysis
+Standards-Version: 3.9.2
+
+Package: ros-melodic-diagnostic-analysis
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-diagnostic-msgs, ros-melodic-rosbag, ros-melodic-roslib
+Description: The diagnostic_analysis package can convert a log of diagnostics data into a series of CSV files.
+ Robot logs are recorded with rosbag, and can be processed offline using the scripts in this package.
