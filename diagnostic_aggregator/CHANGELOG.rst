@@ -2,30 +2,17 @@
 Changelog for package diagnostic_aggregator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.10.0 (2020-08-11)
--------------------
-* Fixed Flaky Test (`#145 <https://github.com/ros/diagnostics/issues/145>`_)
-* Make Guglielmo Gemignani ROS1 maintainer (`#155 <https://github.com/ros/diagnostics/issues/155>`_)
-* Contributors: Guglielmo Gemignani, Martin Pecka
-
-1.9.4 (2020-04-01)
+1.9.6 (2020-08-18)
 ------------------
-* noetic release (`#136 <https://github.com/ros/diagnostics/issues/136>`_)
-* Merge pull request `#99 <https://github.com/ros/diagnostics/issues/99>`_ from g-gemignani/indigo-devel
-  Fix discard_stale (Closes `#65 <https://github.com/ros/diagnostics/issues/65>`_)
-* Merge pull request `#96 <https://github.com/ros/diagnostics/issues/96>`_ from kejxu/use_global_gtest_library
-  update CMakeLists.txt to search for local gtest first
-* Fix problem with pr that skipped the timeout stale transition period
-* Address pr issue about discard_stale test
+* Extend initial connect timeout for add_analyzers (`#129 <https://github.com/ros/diagnostics/issues/129>`_)
+* Contributors: Mike Purvis
+
+1.9.5 (2020-08-10)
+------------------
+* Update CMakeLists.txt to search for local gtest first
 * Fix copyright and remove unused imports
-* Address issue 65
-  Make sure that analyzers flagged with discard_stale = true are correctly
-  removed after being stale for a period greater than the timeout
-* update cmake include directories to use correct gtest.h
-* Merge pull request `#95 <https://github.com/ros/diagnostics/issues/95>`_ from kejxu/use_operator_instead_of_alias
-  use operators instead of aliases
-* fix build break
-* Contributors: Alejandro Hernández Cordero, Austin, Guglielmo Gemignani, James Xu, Sean Yen
+* Improvement by using opertors instead of aliases (Closes `#95 <https://github.com/ros/diagnostics/issues/95>`_
+* Contributors: Austin, Guglielmo Gemignani, James Xu, Martin Pecka, Sean Yen
 
 1.9.3 (2018-05-02)
 ------------------

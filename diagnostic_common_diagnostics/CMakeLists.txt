@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 2.8.3)
 project(diagnostic_common_diagnostics)
 
 # Load catkin and all dependencies required for this package
@@ -19,7 +19,7 @@ if(CATKIN_ENABLE_TESTING)
   add_rostest(test/launch/test_cpu_monitor_level_warn.launch)
 endif()
 
-install(PROGRAMS
+catkin_install_python(PROGRAMS
   src/diagnostic_common_diagnostics/cpu_monitor.py
   src/diagnostic_common_diagnostics/hd_monitor.py
   src/diagnostic_common_diagnostics/ntp_monitor.py

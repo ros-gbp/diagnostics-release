@@ -2,16 +2,15 @@
 Changelog for package diagnostic_common_diagnostics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.10.0 (2020-08-11)
--------------------
-* Add feature of window avereging for cpu monitor (`#153 <https://github.com/ros/diagnostics/issues/153>`_)
-* Make Guglielmo Gemignani ROS1 maintainer (`#155 <https://github.com/ros/diagnostics/issues/155>`_)
-* Contributors: Guglielmo Gemignani, Rein Appeldoorn, gemignani
-
-1.9.4 (2020-04-01)
+1.9.6 (2020-08-18)
 ------------------
-* noetic release (`#136 <https://github.com/ros/diagnostics/issues/136>`_)
-* Contributors: Alejandro Hernández Cordero
+* Fix shebang line for python3 (`#141 <https://github.com/ros/diagnostics/issues/141>`_)
+* Contributors: Mikael Arguedas, gemignani
+
+1.9.5 (2020-08-10)
+------------------
+* Added feature of window averaging for cpu monitor
+* Contributors: Guglielmo Gemignani, Rein Appeldoorn
 
 1.9.3 (2018-05-02)
 ------------------

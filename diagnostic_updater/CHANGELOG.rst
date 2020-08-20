@@ -2,15 +2,18 @@
 Changelog for package diagnostic_updater
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.10.0 (2020-08-11)
--------------------
-* Make Guglielmo Gemignani ROS1 maintainer (`#155 <https://github.com/ros/diagnostics/issues/155>`_)
-* Test build fix on Windows build. (`#8 <https://github.com/ros/diagnostics/issues/8>`_) (`#138 <https://github.com/ros/diagnostics/issues/138>`_)
-* Contributors: Guglielmo Gemignani, Sean Yen
-
-1.9.4 (2020-04-01)
+1.9.6 (2020-08-18)
 ------------------
-* noetic release (`#136 <https://github.com/ros/diagnostics/issues/136>`_)
+* Add SlowTimeStampStatus (`#144 <https://github.com/ros/diagnostics/issues/144>`_)
+* Test build fix on Windows (`#8 <https://github.com/ros/diagnostics/issues/8>`_) (`#107 <https://github.com/ros/diagnostics/issues/107>`_)
+* Resolve div by zero in updater (`#108 <https://github.com/ros/diagnostics/issues/108>`_)
+* Use std::isfinite due to deprecation on osx (`#113 <https://github.com/ros/diagnostics/issues/113>`_)
+* Remove extra (not needed) trailing ':' (`#116 <https://github.com/ros/diagnostics/issues/116>`_)
+* Fix GCC warnings with -Wpedantic (`#124 <https://github.com/ros/diagnostics/issues/124>`_)
+* Contributors: Enrique Fernandez Perdomo, Jacob Perron, Sean Yen, Stephan Sundermann, William Hudgins, gemignani
+
+1.9.5 (2020-08-10)
+------------------
 * Merge pull request `#105 <https://github.com/ros/diagnostics/issues/105>`_ from mikepurvis/py3-httplib
   Fix httplib import for Python 3.
 * Fix httplib import for Python 3.
@@ -28,7 +31,7 @@ Changelog for package diagnostic_updater
 * Merge pull request `#84 <https://github.com/ros/diagnostics/issues/84>`_ from nbussas/frequency_status_name
   Make FrequencyStatus' name configurable
 * Make FrequencyStatus' name configurable
-* Contributors: Alejandro Hernández Cordero, Austin, Ian Colwell, James Xu, Mike Purvis, Nils Bussas, Sean Yen
+* Contributors: Austin, Ian Colwell, James Xu, Mike Purvis, Nils Bussas, Sean Yen
 
 1.9.3 (2018-05-02)
 ------------------
