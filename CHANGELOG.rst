@@ -2,6 +2,14 @@
 Changelog for package diagnostic_aggregator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.10.2 (2020-09-03)
+-------------------
+
+1.10.1 (2020-08-20)
+-------------------
+* Extend initial connect timeout for add_analyzers (`#129 <https://github.com/ros/diagnostics/issues/129>`_)
+* Contributors: Mike Purvis
+
 1.10.0 (2020-08-11)
 -------------------
 * Fixed Flaky Test (`#145 <https://github.com/ros/diagnostics/issues/145>`_)
