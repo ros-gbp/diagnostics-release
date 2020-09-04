@@ -2,6 +2,12 @@
 Changelog for package diagnostics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.10.2 (2020-09-03)
+-------------------
+
+1.10.1 (2020-08-20)
+-------------------
+
 1.10.0 (2020-08-11)
 -------------------
 * Make Guglielmo Gemignani ROS1 maintainer (`#155 <https://github.com/ros/diagnostics/issues/155>`_)
