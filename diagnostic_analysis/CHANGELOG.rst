@@ -2,14 +2,21 @@
 Changelog for package diagnostic_analysis
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.9.7 (2020-09-03)
-------------------
+1.10.2 (2020-09-03)
+-------------------
 
-1.9.6 (2020-08-18)
-------------------
+1.10.1 (2020-08-20)
+-------------------
 
-1.9.5 (2020-08-10)
+1.10.0 (2020-08-11)
+-------------------
+* Make Guglielmo Gemignani ROS1 maintainer (`#155 <https://github.com/ros/diagnostics/issues/155>`_)
+* Contributors: Guglielmo Gemignani
+
+1.9.4 (2020-04-01)
 ------------------
+* noetic release (`#136 <https://github.com/ros/diagnostics/issues/136>`_)
+* Contributors: Alejandro Hernández Cordero
 
 1.9.3 (2018-05-02)
 ------------------

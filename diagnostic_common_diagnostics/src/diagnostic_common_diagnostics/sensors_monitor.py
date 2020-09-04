@@ -205,7 +205,7 @@ class SensorsMonitor(object):
                         if sensor.getInput() < sensor.getMin():
                             stat.mergeSummary(DIAG.ERROR, "No Fan Speed")
                     stat.add(" ".join([sensor.getName(), sensor.getType()]), sensor.getInput())
-        except Exception, e:
+        except Exception as e:
             import traceback
             rospy.logerr('Unable to process lm-sensors data')
             rospy.logerr(traceback.format_exc())
