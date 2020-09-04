@@ -2,6 +2,15 @@
 Changelog for package diagnostic_common_diagnostics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.10.2 (2020-09-03)
+-------------------
+
+1.10.1 (2020-08-20)
+-------------------
+* Fix minor issues
+* Fix shebang line for python3 (`#141 <https://github.com/ros/diagnostics/issues/141>`_)
+* Contributors: Mikael Arguedas, gemignani
+
 1.10.0 (2020-08-11)
 -------------------
 * Add feature of window avereging for cpu monitor (`#153 <https://github.com/ros/diagnostics/issues/153>`_)
