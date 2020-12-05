@@ -2,6 +2,11 @@
 Changelog for package diagnostic_common_diagnostics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.10.3 (2020-12-05)
+-------------------
+* Update maintainer info
+* Contributors: gemignani
+
 1.10.2 (2020-09-03)
 -------------------
 
