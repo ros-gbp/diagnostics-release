@@ -1,0 +1,72 @@
+ros-noetic-rosdiagnostic (1.10.3-1buster) buster; urgency=high
+
+
+
+ -- Guillaume Autran <gautran@clearpath.ai>  Fri, 04 Dec 2020 23:00:00 -0000
+
+ros-noetic-rosdiagnostic (1.10.2-1buster) buster; urgency=high
+
+
+
+ -- Guillaume Autran <gautran@clearpath.ai>  Wed, 02 Sep 2020 22:00:00 -0000
+
+ros-noetic-rosdiagnostic (1.10.1-1buster) buster; urgency=high
+
+
+
+ -- Guillaume Autran <gautran@clearpath.ai>  Wed, 19 Aug 2020 22:00:00 -0000
+
+ros-noetic-rosdiagnostic (1.10.0-1buster) buster; urgency=high
+
+
+
+ -- Guillaume Autran <gautran@clearpath.ai>  Mon, 10 Aug 2020 22:00:00 -0000
+
+ros-noetic-rosdiagnostic (1.9.4-1buster) buster; urgency=high
+
+  * noetic release (#136 <https://github.com/ros/diagnostics/issues/136>)
+    * Bump CMake version to avoid CMP0048 warning
+    Signed-off-by: ahcorde <mailto:ahcorde@gmail.com>
+    * Changes to make it work with Python3
+    Signed-off-by: ahcorde <mailto:ahcorde@gmail.com>
+    * Use setuptools instead of distutils
+    Signed-off-by: ahcorde <mailto:ahcorde@gmail.com>
+    * Changes from python2 to python3
+    Signed-off-by: ahcorde <mailto:ahcorde@gmail.com>
+    * update keys - diagnostic_common_diagnostics
+    Signed-off-by: ahcorde <mailto:ahcorde@gmail.com>
+    * Minor fixes
+    Signed-off-by: ahcorde <mailto:ahcorde@gmail.com>
+  * Contributors: Alejandro Hernández Cordero
+
+ -- Guillaume Autran <gautran@clearpath.ai>  Tue, 31 Mar 2020 22:00:00 -0000
+
+ros-noetic-rosdiagnostic (1.9.3-1buster) buster; urgency=high
+
+
+
+ -- Guillaume Autran <gautran@clearpath.ai>  Tue, 01 May 2018 22:00:00 -0000
+
+ros-noetic-rosdiagnostic (1.9.2-1buster) buster; urgency=high
+
+
+
+ -- Guillaume Autran <gautran@clearpath.ai>  Fri, 14 Jul 2017 22:00:00 -0000
+
+ros-noetic-rosdiagnostic (1.9.1-1buster) buster; urgency=high
+
+
+
+ -- Guillaume Autran <gautran@clearpath.ai>  Fri, 14 Jul 2017 22:00:00 -0000
+
+ros-noetic-rosdiagnostic (1.9.0-1buster) buster; urgency=high
+
+  * Initial release
+  * Created a command to print rosdiagnostics to the console.
+    Works very much like rostopic echo but instead automatically connects to the aggregated diagnostics and output in a friendly format the content of the diagnostic report.
+    Issue: https://github.com/ros/diagnostics/issues/57
+  * Contributors: Guillaume Autran
+
+ -- Guillaume Autran <gautran@clearpath.ai>  Mon, 24 Apr 2017 22:00:00 -0000
+
+
