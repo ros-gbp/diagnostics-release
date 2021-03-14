@@ -2,6 +2,14 @@
 Changelog for package diagnostic_updater
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.10.4 (2021-03-14)
+-------------------
+* Fix some doc typos and remove travis config (`#173 <https://github.com/ros/diagnostics/issues/173>`_)
+  * cleate -> create
+  * single single -> single
+  * remove travis config
+* Contributors: Mikael Arguedas
+
 1.10.3 (2020-12-05)
 -------------------
 * Use get_param_cached in diagnostic_updater
