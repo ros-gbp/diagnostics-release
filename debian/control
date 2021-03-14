@@ -1,0 +1,12 @@
+Source: ros-noetic-self-test
+Section: misc
+Priority: optional
+Maintainer: Guglielmo Gemignani <guglielmo.gemignani@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-diagnostic-msgs, ros-noetic-diagnostic-updater, ros-noetic-roscpp, ros-noetic-rostest
+Homepage: http://www.ros.org/wiki/self_test
+Standards-Version: 3.9.2
+
+Package: ros-noetic-self-test
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-diagnostic-msgs, ros-noetic-diagnostic-updater, ros-noetic-roscpp
+Description: self_test
