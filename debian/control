@@ -1,0 +1,12 @@
+Source: ros-noetic-diagnostic-common-diagnostics
+Section: misc
+Priority: optional
+Maintainer: Guglielmo Gemignani <guglielmo.gemignani@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-diagnostic-updater, ros-noetic-rospy, ros-noetic-rostest
+Homepage: http://ros.org/wiki/diagnostic_common_diagnostics
+Standards-Version: 3.9.2
+
+Package: ros-noetic-diagnostic-common-diagnostics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, hddtemp, lm-sensors, python3-psutil, ros-noetic-diagnostic-updater, ros-noetic-rospy, ros-noetic-tf
+Description: diagnostic_common_diagnostics
