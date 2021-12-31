@@ -1,0 +1,231 @@
+ros-noetic-diagnostic-analysis (1.11.0-1buster) buster; urgency=high
+
+  * Fix type comparison for python3 (#194 <https://github.com/ros/diagnostics/issues/194>)
+  * Contributors: Mikael Arguedas
+
+ -- Guglielmo Gemignani <guglielmo.gemignani@gmail.com>  Thu, 30 Dec 2021 23:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.10.4-1buster) buster; urgency=high
+
+
+
+ -- Guglielmo Gemignani <guglielmo.gemignani@gmail.com>  Sat, 13 Mar 2021 23:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.10.3-1buster) buster; urgency=high
+
+  * Update maintainer info
+  * Contributors: gemignani
+
+ -- Guglielmo Gemignani <guglielmo.gemignani@gmail.com>  Fri, 04 Dec 2020 23:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.10.2-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 02 Sep 2020 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.10.1-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 19 Aug 2020 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.10.0-1buster) buster; urgency=high
+
+  * Make Guglielmo Gemignani ROS1 maintainer (#155 <https://github.com/ros/diagnostics/issues/155>)
+  * Contributors: Guglielmo Gemignani
+
+ -- Austin Hendrix <namniart@gmail.com>  Mon, 10 Aug 2020 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.9.4-1buster) buster; urgency=high
+
+  * noetic release (#136 <https://github.com/ros/diagnostics/issues/136>)
+  * Contributors: Alejandro Hernández Cordero
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 31 Mar 2020 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.9.3-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 01 May 2018 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.9.2-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Fri, 14 Jul 2017 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.9.1-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Fri, 14 Jul 2017 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.9.0-1buster) buster; urgency=high
+
+  * Install diagnostic_analysis nodes
+    Fixes #51 <https://github.com/ros/diagnostics/issues/51>
+  * make rostest in CMakeLists optional (ros/rosdistro#3010 <https://github.com/ros/rosdistro/issues/3010>)
+  * Contributors: Lukas Bulwahn, trainman419
+
+ -- Austin Hendrix <namniart@gmail.com>  Mon, 24 Apr 2017 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.8.10-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Mon, 13 Jun 2016 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.8.9-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 01 Mar 2016 23:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.8.8-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 05 Aug 2015 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.8.7-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 08 Jan 2015 23:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.8.6-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 09 Dec 2014 23:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.8.5-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Mon, 28 Jul 2014 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.8.4-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 24 Jul 2014 18:51:00 -0000
+
+ros-noetic-diagnostic-analysis (1.8.3-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 22 Apr 2014 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.8.2-1buster) buster; urgency=high
+
+  * Most tests pass
+  * Contributors: Austin Hendrix
+
+ -- Austin Hendrix <namniart@gmail.com>  Mon, 07 Apr 2014 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.8.1-1buster) buster; urgency=high
+
+  * Add myself as maintainer
+  * check for CATKIN_ENABLE_TESTING
+  * Contributors: Austin Hendrix, Lukas Bulwahn
+
+ -- Austin Hendrix <namniart@gmail.com>  Sun, 06 Apr 2014 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.8.0-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 02 Apr 2013 22:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.7.11-1buster) buster; urgency=high
+
+  * Fix python setup in diagnostic_analysis
+  * Contributors: trainman419
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 24 Jul 2014 18:24:00 -0000
+
+ros-noetic-diagnostic-analysis (1.7.10-1buster) buster; urgency=high
+
+  * removed rostest from test_depend in diagnostic_analysis
+  * Changed package.xml version number before releasing
+  * Removed duplicated test dependancies
+    test_depend tags should not duplicate run/build depends tags.
+  * Contributors: Aaron Blasdel, Brice Rebsamen
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 21 Feb 2013 23:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.7.9-1buster) buster; urgency=high
+
+  * add missing dep to catkin
+  * Contributors: Dirk Thomas
+
+ -- Austin Hendrix <namniart@gmail.com>  Thu, 13 Dec 2012 23:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.7.8-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 05 Dec 2012 23:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.7.7-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Fri, 09 Nov 2012 23:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.7.6-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 07 Nov 2012 22:32:00 -0000
+
+ros-noetic-diagnostic-analysis (1.7.5-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 07 Nov 2012 20:53:00 -0000
+
+ros-noetic-diagnostic-analysis (1.7.4-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Wed, 07 Nov 2012 19:18:00 -0000
+
+ros-noetic-diagnostic-analysis (1.7.3-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Sat, 03 Nov 2012 23:00:00 -0000
+
+ros-noetic-diagnostic-analysis (1.7.2-1buster) buster; urgency=high
+
+
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 30 Oct 2012 21:31:00 -0000
+
+ros-noetic-diagnostic-analysis (1.7.1-1buster) buster; urgency=high
+
+  * fix a few things after the first release
+  * Contributors: Vincent Rabaud
+
+ -- Austin Hendrix <namniart@gmail.com>  Tue, 30 Oct 2012 14:30:00 -0000
+
+ros-noetic-diagnostic-analysis (1.7.0-1buster) buster; urgency=high
+
+  * catkinize the stack
+  * #5364 <https://github.com/ros/diagnostics/issues/5364> #5396 <https://github.com/ros/diagnostics/issues/5396> remove useless rosrecord import
+  * diagnostic_analysis updated to use rosbag API. #4163 <https://github.com/ros/diagnostics/issues/4163>
+  * Added Ubuntu platform tags to manifest
+  * diagnostic_aggregator/diagnostic_analysis doc reviewed
+  * small bug fixes
+  * Added hardware_id field to CSV output for export_csv.py
+  * Removing deprecated line in CMakesList.txt for diagnostics 0.3.0
+  * Renamed diagnostics_analysis to diagnostic_analysis, #2700 <https://github.com/ros/diagnostics/issues/2700>
+  * Contributors: Vincent Rabaud, gerkey, kwc, watts
+
+ -- Austin Hendrix <namniart@gmail.com>  Sun, 28 Oct 2012 23:00:00 -0000
+
+
