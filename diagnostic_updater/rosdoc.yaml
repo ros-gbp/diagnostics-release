@@ -1,5 +1,0 @@
-- builder: doxygen
-  name: C++ API
-- builder: sphinx
-  sphinx_root_dir: doc
-  output_dir: python
