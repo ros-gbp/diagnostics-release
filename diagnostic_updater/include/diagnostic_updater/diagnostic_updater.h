@@ -270,7 +270,7 @@ namespace diagnostic_updater
 
       void add(DiagnosticTask &task)
       {
-        TaskFunction f = boost::bind(&DiagnosticTask::run, &task, _1);
+        TaskFunction f = boost::bind(&DiagnosticTask::run, &task, boost::placeholders::_1);
         add(task.getName(), f);
       }
 
@@ -290,7 +290,7 @@ namespace diagnostic_updater
       template <class T>
         void add(const std::string name, T *c, void (T::*f)(diagnostic_updater::DiagnosticStatusWrapper&))
         {
-          DiagnosticTaskInternal int_task(name, boost::bind(f, c, _1));
+          DiagnosticTaskInternal int_task(name, boost::bind(f, c, boost::placeholders::_1));
           addInternal(int_task);
         }
 
@@ -368,8 +368,10 @@ namespace diagnostic_updater
       /**
        * \brief Constructs an updater class.
        *
-       * \param h Node handle from which to get the diagnostic_period
+       * \param h Node handle used to publish the diagnostics messages.
+       * \param ph Node handle from which to get the diagnostic_period
        * parameter.
+       * \param node_name Name of the node used in the messages.
        */
     Updater(ros::NodeHandle h = ros::NodeHandle(), ros::NodeHandle ph = ros::NodeHandle("~"), std::string node_name = ros::this_node::getName()) : private_node_handle_(ph), node_handle_(h), node_name_(node_name)
     {
