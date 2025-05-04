@@ -1,3 +1,34 @@
+## diagnostics (noetic) - 1.12.1-1
+
+The packages in the `diagnostics` repository were released into the `noetic` distro by running `/usr/bin/bloom-release --rosdistro noetic --track noetic diagnostics` on `Sun, 04 May 2025 12:55:05 -0000`
+
+These packages were released:
+- `diagnostic_aggregator`
+- `diagnostic_analysis`
+- `diagnostic_common_diagnostics`
+- `diagnostic_updater`
+- `diagnostics`
+- `rosdiagnostic`
+- `self_test`
+- `test_diagnostic_aggregator`
+
+Version of package(s) in repository `diagnostics`:
+
+- upstream repository: https://github.com/ros/diagnostics.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `1.11.0-1`
+- new version: `1.12.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## diagnostics (noetic) - 1.11.0-1
 
 The packages in the `diagnostics` repository were released into the `noetic` distro by running `/usr/bin/bloom-release diagnostics --rosdistro noetic` on `Fri, 31 Dec 2021 10:03:31 -0000`
