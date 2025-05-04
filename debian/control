@@ -1,0 +1,13 @@
+Source: ros-noetic-diagnostic-analysis
+Section: misc
+Priority: optional
+Maintainer: Guglielmo Gemignani <guglielmo.gemignani@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin (>= 0.5.68), ros-noetic-diagnostic-msgs, ros-noetic-rosbag, ros-noetic-roslib, ros-noetic-rostest
+Homepage: http://www.ros.org/wiki/diagnostics_analysis
+Standards-Version: 3.9.2
+
+Package: ros-noetic-diagnostic-analysis
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-diagnostic-msgs, ros-noetic-rosbag, ros-noetic-roslib
+Description: The diagnostic_analysis package can convert a log of diagnostics data into a series of CSV files.
+ Robot logs are recorded with rosbag, and can be processed offline using the scripts in this package.
